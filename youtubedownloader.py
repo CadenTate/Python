@@ -15,7 +15,7 @@ def download(links:str|List[str]) -> None:
     print("Completed!")
 
 def process_text():
-    text = inputBox.get("1.0",tk.END).split("\n")
+    text = inputBox.get("1.0",tk.END).strip().split("\n")
     print(text)
     download(text)
 
